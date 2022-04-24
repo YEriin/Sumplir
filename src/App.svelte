@@ -1,12 +1,13 @@
 <script lang="ts">
-  import logo from "./assets/svelte.png";
-  import Counter from "./lib/Counter.svelte";
+  import Nav from "./modules/nav/index.svelte";
+  import Sidebar from "./modules/nav/index.svelte";
+  import WhiteBoard from "./modules/nav/index.svelte";
 </script>
 
 <main>
-  <nav>here is nav</nav>
-  <aside>item picker</aside>
-  <section>boards</section>
+  <Nav />
+  <Sidebar />
+  <WhiteBoard />
 </main>
 
 <style>
