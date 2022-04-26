@@ -2,15 +2,15 @@
   const workspaces = Array.from({ length: 30 }, (_, idx) => ({ name: "W" }));
 </script>
 
-<div id="container">
+<div class="container">
   {#each workspaces as { name }, idx}
     <div class="workspaceItem">{name + idx}</div>
   {/each}
-  <div>+</div>
+  <div class="workspaceItem">+</div>
 </div>
 
 <style>
-  #container {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -24,6 +24,8 @@
     border-right: 1px solid rgb(99, 154, 17);
 
     padding: 10px 0;
+
+    box-sizing: border-box;
   }
 
   .workspaceItem {
