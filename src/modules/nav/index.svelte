@@ -2,10 +2,10 @@
   export let value = 1;
 </script>
 
-<div id="container"><span>Logo</span><span>Sumplir</span><input /></div>
+<div class="container"><span>Logo</span><span>Sumplir</span><input /></div>
 
 <style>
-  #container {
+  .container {
     top: 0;
     width: 100vw;
     height: 48px;

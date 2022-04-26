@@ -6,8 +6,7 @@
 
 <main>
   <Nav />
-  <Sidebar />
-  <WhiteBoard />
+  <div class="content"><Sidebar /><WhiteBoard /></div>
 </main>
 
 <style>
@@ -18,5 +17,11 @@
 
   :global body {
     margin: 0;
+  }
+
+  .content {
+    display: flex;
+    height: calc(100vh - 48px);
+    overflow-y: hidden;
   }
 </style>
