@@ -21,7 +21,9 @@
 
   .content {
     display: flex;
+    width: 100vw;
     height: calc(100vh - 48px);
     overflow-y: hidden;
+    box-sizing: border-box;
   }
 </style>
