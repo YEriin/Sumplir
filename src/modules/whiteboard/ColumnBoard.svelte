@@ -9,7 +9,7 @@
   </div>
   <div class="itemList">
     {#each data as { v }, i}
-      <div>
+      <div class="item">
         <a target="_blank">
           {i + 1}: {v}
         </a>
@@ -26,6 +26,8 @@
     flex-shrink: 0;
     padding: 8px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
   }
 
   .head {
@@ -33,9 +35,14 @@
     align-items: center;
     justify-content: space-between;
     box-sizing: border-box;
+    margin-bottom: 12px;
   }
 
   .itemList {
     overflow-y: auto;
+  }
+
+  .item {
+    height: 54px;
   }
 </style>
