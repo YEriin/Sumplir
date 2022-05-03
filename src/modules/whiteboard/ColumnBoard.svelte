@@ -1,4 +1,5 @@
 <script lang="ts">
+  import BoardItem from "./BoardItem.svelte";
   const data = Array.from({ length: 30 }, (v, idx) => ({ v: idx }));
 </script>
 
@@ -9,11 +10,7 @@
   </div>
   <div class="itemList">
     {#each data as { v }, i}
-      <div class="item">
-        <a target="_blank">
-          {i + 1}: {v}
-        </a>
-      </div>
+      <BoardItem content={`${v}`} />
     {/each}
   </div>
 </div>
@@ -40,9 +37,5 @@
 
   .itemList {
     overflow-y: auto;
-  }
-
-  .item {
-    height: 54px;
   }
 </style>
