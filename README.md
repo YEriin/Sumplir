@@ -1,12 +1,8 @@
 # Sumplir 💡
 
-> desc
+> Task manager with zero configuration
 
-- 💡 a
-- ⚡️ b
-- 🛠️ c
-- 📦 d
-- 🔩 e
+- ⚡️ zero configuration to get started, no registritation, no fee
 
 ## Try it now
 
