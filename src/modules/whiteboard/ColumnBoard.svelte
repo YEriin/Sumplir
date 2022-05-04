@@ -37,5 +37,9 @@
 
   .itemList {
     overflow-y: auto;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
   }
 </style>
