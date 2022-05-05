@@ -12,6 +12,10 @@
     flex-shrink: 0;
     height: 54px;
     border: 1px solid lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 8px;
   }
 
   .contentWrapper {
