@@ -1,10 +1,16 @@
 <script lang="ts">
-  const workspaces = Array.from({ length: 30 }, (_, idx) => ({ name: "W" }));
+  import { workspaceStore } from "../store/index";
+
+  let workspaces;
+
+  const unsubscribe = workspaceStore.subscribe((store) => {
+    workspaces = store.workspaces;
+  });
 </script>
 
 <div class="container">
   {#each workspaces as { name }, idx}
-    <div class="workspaceItem">{name + idx}</div>
+    <div class="workspaceItem">{name}</div>
   {/each}
   <div class="workspaceItem">+</div>
 </div>
