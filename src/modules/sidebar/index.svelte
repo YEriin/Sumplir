@@ -2,9 +2,11 @@
   import { workspaceStore } from "../store/index";
 
   let workspaces;
+  let currentWorkspace;
 
   const unsubscribe = workspaceStore.subscribe((store) => {
     workspaces = store.workspaces;
+    currentWorkspace = store.currentWorkspaceKey;
   });
 </script>
 
