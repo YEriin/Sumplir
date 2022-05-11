@@ -1,11 +1,31 @@
 <script lang="ts">
+  import { workspaceStore } from "../store/index";
+
   export let key: string;
   export let name: string;
 
-  // const handleWorkspaceItemClicked = (key: string) => {};
+  let currentWorkspace;
+
+  $: isCurrentItemSelected = currentWorkspace === key;
+
+  const unsubscribe = workspaceStore.subscribe((store) => {
+    currentWorkspace = store.currentWorkspaceKey;
+  });
+
+  const handleWorkspaceItemClicked = () => {
+    workspaceStore.update((store) => {
+      store.currentWorkspaceKey = key;
+      return store;
+    });
+  };
 </script>
 
-<div class="workspaceItem">{name}</div>
+<div
+  class={`workspaceItem ${isCurrentItemSelected ? "selectedItem" : ""}`}
+  on:click={handleWorkspaceItemClicked}
+>
+  {name}
+</div>
 
 <style>
   .workspaceItem {
@@ -23,6 +43,11 @@
 
   .workspaceItem:hover {
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+
+  .selectedItem {
+    color: #1b4caf;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
 </style>
