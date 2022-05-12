@@ -3,11 +3,9 @@
   import WorkspaceItem from "./WorkspaceItem.svelte";
 
   let workspaces;
-  let currentWorkspace;
 
   const unsubscribe = workspaceStore.subscribe((store) => {
     workspaces = store.workspaces;
-    currentWorkspace = store.currentWorkspaceKey;
   });
 </script>
 
