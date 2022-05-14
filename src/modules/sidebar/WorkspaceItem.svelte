@@ -29,7 +29,7 @@
 
 <style>
   .workspaceItem {
-    width: 48px;
+    width: 100%;
     height: 48px;
     border: 2px solid rgb(153 187 240);
     background-color: #deefff;
