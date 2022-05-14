@@ -22,7 +22,7 @@ export const workspaceStore = writable<Store>({
   createdAt: new Date().toISOString(),
   currentWorkspaceKey: null,
   workspaces: workspaces.map((name) => ({
-    name,
+    name: name.repeat(20),
     boards: boards.map((name) => ({ name })),
   })),
 });

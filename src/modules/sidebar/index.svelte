@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { workspaceStore } from "../store/index";
+  import { workspaceStore } from "../../store/index";
   import WorkspaceItem from "./WorkspaceItem.svelte";
 
   let workspaces;
