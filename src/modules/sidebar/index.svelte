@@ -18,6 +18,7 @@
 
 <style>
   .container {
+    flex-shrink: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,8 +31,12 @@
 
     border-right: 1px solid rgb(99, 154, 17);
 
-    padding: 10px 0;
+    padding: 10px 7px;
 
     box-sizing: border-box;
+  }
+
+  .container:hover {
+    width: 300px;
   }
 </style>
