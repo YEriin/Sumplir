@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { workspaceStore } from "../store/index";
+  import { workspaceStore } from "../../store/index";
 
   export let key: string;
   export let name: string;
