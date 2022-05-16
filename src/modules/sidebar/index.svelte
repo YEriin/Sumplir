@@ -31,7 +31,7 @@
 
     border-right: 1px solid rgb(99, 154, 17);
 
-    padding: 10px 7px;
+    padding: 10px 4px;
 
     box-sizing: border-box;
   }
