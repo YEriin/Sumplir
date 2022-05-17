@@ -1,5 +1,6 @@
 <script lang="ts">
   import { workspaceStore } from "../../store/index";
+  import AddButton from "./AddButton.svelte";
   import WorkspaceItem from "./WorkspaceItem.svelte";
 
   let workspaces;
@@ -13,7 +14,7 @@
   {#each workspaces as { name }, idx}
     <WorkspaceItem {name} key={name} />
   {/each}
-  <WorkspaceItem name="+" key="+" />
+  <AddButton />
 </div>
 
 <style>
