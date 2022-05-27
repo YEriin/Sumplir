@@ -1,0 +1,10 @@
+.container {
+  top: 0;
+  width: 100vw;
+  height: 48px;
+  background-color: blanchedalmond;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
