@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import Nav from "../components/Nav";
+import Nav from "../components/nav/Nav";
 import Sidebar from "../components/Sidebar";
 import WhiteBoard from "../components/WhiteBoard";
 import styles from "../styles/Home.module.css";
