@@ -1,10 +1,21 @@
-.container {
-  top: 0;
-  width: 100vw;
-  height: 48px;
-  background-color: blanchedalmond;
+.item {
+  flex-shrink: 0;
+  height: 54px;
+  border: 1px solid lightblue;
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: space-between;
-  box-sizing: border-box;
+  padding: 8px;
+}
+
+.contentWrapper {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.operationWrapper {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
