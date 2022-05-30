@@ -19,3 +19,12 @@
   justify-content: end;
   align-items: center;
 }
+
+.OperationBarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  margin-bottom: 8px;
+  box-sizing: border-box;
+}
