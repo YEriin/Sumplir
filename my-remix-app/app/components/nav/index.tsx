@@ -1,13 +1,17 @@
-// import styles from "../../styles/Nav.module.css";
+import styles from "./styles.css";
+
+export const links = () => [
+    {rel: "stylesheet", href: styles},
+];
 
 const Nav = () => {
-  return (
-    <div>
-      <span>Logo</span>
-      <span>Sumplir</span>
-      <input />
-    </div>
-  );
+    return (
+        <div>
+            <span>Logo</span>
+            <span>Sumplir</span>
+            <input/>
+        </div>
+    );
 };
 
 export default Nav;
