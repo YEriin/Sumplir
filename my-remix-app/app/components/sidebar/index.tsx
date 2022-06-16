@@ -1,27 +1,31 @@
-import styles from "../../styles/Sidebar.module.css";
+import styles from "./styles.css";
 import AddButton from "./AddButton";
 import WorkspaceItem from "./WorkspaceItem";
 
 interface Board {
-  name: string;
+    name: string;
 }
 
 interface Workspace {
-  name: string;
-  boards: Board[];
+    name: string;
+    boards: Board[];
 }
 
-const Sidebar = () => {
-  const workspaces: Workspace[] = [{ name: "a", boards: [] }];
+export const links = () => [
+    {rel: "stylesheet", href: styles},
+];
 
-  return (
-    <div className={styles.container}>
-      {workspaces.map(({ name }, idx) => (
-        <WorkspaceItem key={idx} name={name} isCurrentItemSelected={false} />
-      ))}
-      <AddButton />
-    </div>
-  );
+const Sidebar = () => {
+    const workspaces: Workspace[] = [{name: "a", boards: []}];
+
+    return (
+        <div className="container">
+            {workspaces.map(({name}, idx) => (
+                <WorkspaceItem key={idx} name={name} isCurrentItemSelected={false}/>
+            ))}
+            <AddButton/>
+        </div>
+    );
 };
 
 export default Sidebar;
