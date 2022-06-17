@@ -1,22 +1,22 @@
-import styles from "../../styles/Whiteboard.module.css";
+import styles from "./styles.css";
 
 interface BoardItemProps {
-  content: string;
+    content: string;
 }
 
 const BoardItem = (props: BoardItemProps) => {
-  const { content } = props;
+    const {content} = props;
 
-  return (
-    <div className={styles.item}>
-      <div className={styles.contentWrapper}>
-        <span>{content}</span>
-      </div>
-      <div className={styles.operationWrapper}>
-        <span>...</span>
-      </div>
-    </div>
-  );
+    return (
+        <div className={styles.item}>
+            <div className={styles.contentWrapper}>
+                <span>{content}</span>
+            </div>
+            <div className={styles.operationWrapper}>
+                <span>...</span>
+            </div>
+        </div>
+    );
 };
 
 export default BoardItem;
