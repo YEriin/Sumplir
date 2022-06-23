@@ -1,9 +1,9 @@
 import Nav, { links as NavLinks } from "../components/nav";
-import Sidebar from "../components/sidebar";
+import Sidebar, { links as SidebarLinks } from "../components/sidebar";
 import WhiteBoard from "../components/whiteboard";
 
 export function links() {
-  return [...NavLinks()];
+  return [...NavLinks(), ...SidebarLinks()];
 }
 
 export default function Index() {
